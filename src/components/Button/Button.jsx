@@ -1,10 +1,21 @@
-import React from 'react';
+import { useState } from "react";
 import "./button.css";
 
 function Button(props) {
-    return (
-        <button className='btn'>{props.text}</button>
-    )
+const [colorState, setColorState] = useState(
+    { backgroundColor: props.color, 
+        borderColor: "red" }
+    );
+
+function handleClick() { 
+    setColorState({ backgroundColor: "#cc76cc" });
 }
 
-export default Button
+return (
+    <button onClick={handleClick} style={colorState} className="btn">
+        {props.children}
+    </button>
+);
+}
+
+export default Button;
