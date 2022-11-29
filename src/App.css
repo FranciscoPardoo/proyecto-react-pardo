@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  text-decoration-line: none;
+  list-style: none;
 }
 
 .App-logo {
@@ -21,6 +23,7 @@
   justify-content:space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {

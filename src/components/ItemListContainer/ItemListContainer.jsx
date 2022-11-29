@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import getItemsFromAPI, {getItemsFromAPIByCategory} from '../../mockService/mockService';
+import { getItemsFromAPI, getItemsFromAPIByCategory } from '../../services/firebase';
 import ItemList from './ItemList';
 import { useParams } from "react-router-dom";
 
